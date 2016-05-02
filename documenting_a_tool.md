@@ -11,10 +11,9 @@ Perhaps I've missed something off of the list? Do let me know.
 
 These rules also ensure the tool in question is documented to a minimum standard before being published in this guide. I would except all tools to have, at minimum:
 
-* the reasoning behind their choosing explained;
+* an architectural diagram explaining where it fits into a network;
 * their installation well documented;
 * an Ansible Role that installs the tool and manages its configuration;
 * a DigitalOcean based Terraform solution for testing demonstrating the tool's use;
-* an architectural diagram explaining where it fits into a network;
 
 These rules aren't hard rules, of course, but sticking to them as closely as possible keeps documentation high quality and persistent.
