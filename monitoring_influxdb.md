@@ -74,5 +74,4 @@ A role will be developed in time, but for the time being this Playbook will inst
         enabled: true
       with_items:
         - influxdb
-        - chronograf
 ```
