@@ -29,8 +29,3 @@ For development, I use VirtualBox. For stage or production, I favour AWS.
 When defining Terraform state in the future, when I discuss architectures, I will provide two state files: one for development using VirtualBox and a second for AWS for use in production.
 
 If you use a different cloud provider, perhaps DigitalOcean, you'll find Terraform [supports a lot of providers.](https://www.terraform.io/docs/providers/index.html) You'll be expected to write the state files you'll need, but I'm more than hapy to help you out if you struggle.
-
-## Monitoring Driven Infrastructure (MDI)
-As I've previously stated, theory is a type of tool. I would like to present a theory here, briefly, regarding how I intend to develop infrastructure going forward.
-
-I like to call it Monitoring Driven Infrastructure, a phrase I've coined off of the back of [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development) and one I like to use to describe how infrastructure should be developed. Simply put: I believe your monitoring solution should be developed and put in place first, with all checks and thresholds defined, followed by your actual infrastructure housing your application(s). Your application and all resources supporting it should be refined to turn your monitoring dashboard of choice from red to green.
