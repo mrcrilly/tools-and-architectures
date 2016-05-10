@@ -8,7 +8,7 @@
 * [Configuration Management](configuration_management/configuration_management.md)
     - [Ansible](configuration_management/ansible/ansible.md)
     - [Terraform Inventory](configuration_management/ansible/terraform_inventory.md)
-* [Infrastructure Management]
+* [Infrastructure Management](infrastructure_management/infrastructure_management.md)
     - [Terraform](infrastructure_management/terraform/terraform.md)
     - [Packer](infrastructure_management/packer/packer.md)
 * [Monitoring](monitoring/monitoring.md)
