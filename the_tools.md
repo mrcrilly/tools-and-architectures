@@ -41,3 +41,12 @@ Please note that not everything has been documented yet. Anything that isn't a l
 * ElasticSearch;
 * Logstash;
 * Kibana;
+
+## Analytics
+Undecided at this point. I'm currently torn between:
+
+* Piwik;
+* OWA;
+* Google Analytics;
+
+A decision will be made soon (and it will very likely not be Google's solution.)
