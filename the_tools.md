@@ -29,6 +29,9 @@ Please note that not everything has been documented yet. Anything that isn't a l
 * MariaDB with Galera;
 * [InfluxDB](monitoring/influxdb/influxdb.md);
 
+## Caching
+* Redis;
+
 ## HTTPS and Load Balancing
 * Nginx;
 * HAProxy;

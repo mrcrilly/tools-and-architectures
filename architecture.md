@@ -8,46 +8,13 @@ A monolithic application is a large, all-in-one code base made up of tightly cou
 
 The monolithic software design is also extremely common at the time of writing. In fact many experienced and well respected software engineers will suggest starting out with a large, single application before breaking it up into a micro service architecture.
 
-In this book I want to address the specific architecture that would support virtually any monolithic application by covering the following topics:
+## The Real World
+In order to demonstrate the knowledge and tools being discussed throughout this book, we will look at deploying a real world application using everything we learn.
 
-- Networking;
-- Firewalls and traffic control/flow;
-- Monitoring;
-- Logging;
-- Security;
-- Resilience;
-- High availability;
-- Deployment;
+At this point in time, no application has been decided upon, but a few suggestions have been made, including:
 
-These are pretry critical subjects that all systems engineers should take seriously. I want to cover these subjects in as complete a fashion as I can, and I will do so in the above order, strictly. This means the following technologies will be studied and documented in the following order (which may change):
+* Wordpress;
+* Magento;
+* And mirroring Wikipedia;
 
-- Networking and Firewalls:
-    + Terraform;
-- Monitoring:
-    + InfluxDB;
-    + Telegraf;
-    + Grafana;
-- Logging:
-    + ElasticSearch;
-    + Logstash;
-    + Kibana;
-- Security:
-    + Theory: SSH bastions and port forwarding;
-    + Fail2Ban;
-    + AIDE;
-- Resilience & High Availability:
-    + HAProxy;
-    + Varnish;
-- Deployment:
-    + Theory: Continous Integration;
-    + Theory: Continous Delivery;
-    + DroneCI;
-    + JenkinsCI (maybe phased out);
-
-I want to address all of above, and I will do so by providing:
-
-- Ansible Roles and Playbooks for standing up relevant services;
-- Developing Packer build files for deploying AMIs;
-- Looking at Terraform and developing code you can use to deploy the correct services and networking designs;
-
-And much more. It'll be a big job, but it'll be useful for us all.
+I will eventually make a decision and run with it.

@@ -34,6 +34,8 @@ These are pretry critical subjects that all systems engineers should take seriou
     + Fail2Ban;
     + AIDE;
 - Resilience & High Availability:
+    + NginX;
+        * PHP-FPM will also be required;
     + HAProxy;
     + Varnish;
 - Deployment:
