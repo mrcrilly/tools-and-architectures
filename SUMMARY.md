@@ -1,10 +1,15 @@
 # Summary
 
 * [Introduction](README.md)
+    - [Flow](flow.md)
+    - [The Tools](the_tools.md)
+* [Architecture](architecture.md)
 * [Documenting a Tool](documenting_a_tool.md)
-* [Key Tools](key_tools/key_tools.md)
-  * [Ansible](key_tools/ansible.md)
-  * [Terraform](key_tools/terraform.md)
-  * [Packer](key_tools/packer.md)
+* [Configuration Management](configuration_management/configuration_management.md)
+    - [Ansible](configuration_management/ansible/ansible.md)
+    - [Terraform Inventory](configuration_management/ansible/terraform_inventory.md)
+* [Infrastructure Management]
+    - [Terraform](infrastructure_management/terraform/terraform.md)
+    - [Packer](infrastructure_management/packer/packer.md)
 * [Monitoring](monitoring/monitoring.md)
-  * [InfluxDB](monitoring/monitoring_influxdb.md)
+    - [InfluxDB](monitoring/influxdb/influxdb.md)

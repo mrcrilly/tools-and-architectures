@@ -1,4 +1,4 @@
-# Key Tools
+# Primary Tools
 Some tools are central to daily operations. For me, these tend to be:
 
 * Ansible
@@ -26,6 +26,8 @@ Before we can build anything, we need infrastructure. I like to use a two layere
 
 For development, I use VirtualBox. For stage or production, I favour AWS.
 
-When defining Terraform state in the future, when I discuss architectures, I will provide two state files: one for development using VirtualBox and a second for AWS for use in production.
+When defining Terraform state in the future, and when I discuss architectures, I will provide only a single state file for AWS integration of the works discussed in this book.
 
 If you use a different cloud provider, perhaps DigitalOcean, you'll find Terraform [supports a lot of providers.](https://www.terraform.io/docs/providers/index.html) You'll be expected to write the state files you'll need, but I'm more than hapy to help you out if you struggle.
+
+Any contributions to this project's existing Terraform code are welcome.

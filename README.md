@@ -1,45 +1,21 @@
-# Toolchain
-Everyone needs tools to do their job, especially if you work in IT. I wanted to heavily document and outline how I use my favourite tools here, so you can perhaps learn something from my words.
+# Tools & Architectures
+I've always wanted to document the tools and architecture I have so often used and implemented. I believe a lot of people miss out on very cool tools to work with and often poorly design and implement their networks.
 
-What defines a tool in guide? Any piece of software, code, or documentation that helps solve a problem is a "tool." PostgreSQL is a tool that solves relational (and unstructured) data storage problems; MySQL and MariaDB do the same things. Terraform is an excellent tool for managing infrastructure as code, and Ansible is an excellent tool at configuring that infrastructure. Packer, combined with Ansible, helps Terraform do its job even faster. AWS is a tool. And so on.
+The tools we use daily are really quite important to our jobs. The wrong tool, or the right tool misconfigured, can slow us down or result in data corruption or loss. We should select good tools, based on community input and reviews, and then use them correctly for the best results.
 
-This guide will include all kinds of tools used throughout my day to day. I hope my documentation helps you adopt the same tools and solve problems with them as I have done.
+I've seen a lot of people implement poor networks with little to no monitoring, logging, security barriers, deployment processes, and much more. I want to help people design and implement good architectures by providing as much advise and tooling as possible, all wrapped up in a real world example application.
 
-Feel free to comment and make suggestions.
+Together, by pooling our knowledge and skillsets into this book, I believe we can help prevent the above and give new comers a fighting chance.
 
-## Tooling
-Here are my tools of choice, in no particular order, roughly catergorised.
+# This Book
+This book is open-source and is intended to be shared in a non-commercial manner with everyone who is willing to give it the time. Please spread the word.
 
-### Configuration Management
-* Ansible;
-* Custom, dynamic inventories;
+This book is also a place for me (and you) to continuously document the tools, processes, and architectures I deploy on a near daily basis. This book is intended to grow with time and collaboration. It will hopefully evolve as our industry shifts and morphs into something different from what it was only six months ago. If we can keep this book up to date with community driven best practices and advise, then we can help people implement better, more secure and resilient networks.
 
-### Infrastructure Management
-* Packer;
-* Terraform;
+Hopefully we can capture those changes here and help people develop best practices for their business or project needs.
 
-### Containers
-* Docker;
-* Docker Swarm;
-* Docker Compose;
+# Contributing
+A set of contribution guidelines have yet to be developed. For now, just throw pull requests at me and I will see what I can do.
 
-### Continuous Integration/Deployment
-* DroneCI;
-* JenkinsCI;
-
-### Monitoring
-* Telegraf;
-* Chronograf;
-
-### Database
-* PostgreSQL;
-* ElasticSearch;
-* InfluxDB;
-
-### HTTPS and Load Balancing
-* Nginx;
-
-### Logging
-* Logstash;
-* Kibana;
-
+# Contact
+@mrmcrilly and `movedx` on Freenode IRC.
