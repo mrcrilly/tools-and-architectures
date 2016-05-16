@@ -46,7 +46,7 @@ This solution is very good. It as a mature community and has been around a while
 #### Telegraf + InfluxDB
 This stack is a much more plug & play solution and each component comes form the one ecosystem: InfluxData. These guys have created the [TICK stack](https://influxdata.com/get-started/what-is-the-tick-stack/).
 
-I've had good experiences with the TICK stack, but sadly one hughely critical aspect of InfluxDB practically takes it off the table: [clustering/replication for resilience is a $400/month proprietary add-on]().
+I've had good experiences with the TICK stack, but sadly one hughely critical aspect of InfluxDB practically takes it off the table: [clustering/replication for resilience is a $400/month proprietary add-on](https://influxdata.com/blog/update-on-influxdb-clustering-high-availability-and-monetization/). There is a [HackerNews discussion that might offer more insight](https://news.ycombinator.com/item?id=11262318).
 
 I don't know about you, dear reader, but data integrity and security are two aspects of software design which should by default, for free.
 
