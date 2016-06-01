@@ -1,10 +1,10 @@
 # Summary
 
 * [Introduction](README.md)
-    - [Flow](flow.md)
-    - [The Tools](the_tools.md)
-* [Architecture](architecture.md)
-* [Documenting a Tool](documenting_a_tool.md)
+    - [Flow](introduction/flow.md)
+    - [The Tools](introduction/the_tools.md)
+* [Architecture](introduction/architecture.md)
+* [Documenting a Tool](introduction/documenting_a_tool.md)
 * [Configuration Management](configuration_management/configuration_management.md)
     - [Ansible](configuration_management/ansible/ansible.md)
     - [Terraform Inventory](configuration_management/ansible/terraform_inventory.md)
