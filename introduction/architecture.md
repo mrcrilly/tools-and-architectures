@@ -1,4 +1,4 @@
-    # Architecture
+# Architecture
 I want to briefly talk about architecture here. This will set an understanding as to what we're trying to achieve with the various documentation and code bases we will explore.
 
 It's important to remember that the goal of this book is to eventually discuss various aspects of architecture and which kind of designs you can adopt to deploy and deliver your products and services. However that being said, at this point in time we will cover a single architecture for a monolithic web application.
@@ -8,55 +8,43 @@ A monolithic application is a large, all-in-one code base made up of tightly cou
 
 The monolithic software design is also extremely common at the time of writing. In fact many experienced and well respected software engineers will suggest starting out with a large, single application before breaking it up into a micro service architecture.
 
-## The Real World
-In order to demonstrate the knowledge and tools being discussed throughout this book, we will look at deploying a real world application that many people will be familiar with and might even have an interest in hosting themselves: Wordpress.
+## Demonstration Application
+Ideally we would have a real-world application to use for demonstation purposes, but to keep things simple, and to allow us to make changes to the application in a manner the reader can follow along with, we will use a very simple Django application that just serves responses over HTTPS. The application will be split into two parts:
 
-Wordpress is an incredibly popular blogging platform, used the world over. A lot of people, mainly systems administrators who have to maintain the installation, would say Wordpress is a pain to keep up to date and is constantly being attacked/exploited. I believe this makes it the perfect candidate for this book's goals.
+1. The public part which serves our traffic to the general Internet public;
+1. A second part for doing "administration", which will be updated separately from the public part;
 
-## The Architecture
-What will the architecture look like? It will be relatively simple by design, but complete in its implementation. It will have monitoring, backups, redundant databases, load balancers, static content caching (not via CDNs, but using Varnish) and so forth.
+This application will have a few points at which it is updated and pushed to GitHub. This will enable us to demonstrate CI and CD after we've made changes.
 
-Let's break down the components into a list and include some numbers.
+## Our Architecture
+I have outlined the infrastructure below. Diagrams have also been provided, giving a visual representation.
+
+Here is a brief breakdown of each component used to deliver our application.
 
 ### HTTPS Serving
-* HAProxy load balancers: x3
-* Varnish static content caches: x3
-* NginX application/static content servers: x3
+* HAProxy load balancers: x2
 
-### PHP
-* PHP-FPM servers (PHP-FPM over TCP): x3
+### Application Servers
+* Application x2
+* Management Application x2
 
 ### Database
-* MariaDB with Galera: x3
+* PostgreSQL x2
+* repmgr (replication manager) x2
 
-### Monitoring
-This topic is current up for debate. I am considering three solutions, all of which have their merits:
-
-* Sensu + Redis;
-* Telegraf + InfluxDB;
-* Prometheus;
-
-#### Sensu + Redis
-This solution is very good. It as a mature community and has been around a while now. Its architecture is also very smart and scalable, but a few things personally bug me:
-
-* The pre-defined checks, as well as most community checks, are written in Ruby. I have no desire to manage Ruby code;
-* It requires several Sensu Mastes and a Redis Cluster, doubling up on the infrastructure needed versus other options;
-* Sensu and Redis are two individual projects and this is probably fine, but a major change in one could break the other;
-
-#### Telegraf + InfluxDB
-This stack is a much more plug & play solution and each component comes form the one ecosystem: InfluxData. These guys have created the [TICK stack](https://influxdata.com/get-started/what-is-the-tick-stack/).
-
-I've had good experiences with the TICK stack, but sadly one hughely critical aspect of InfluxDB practically takes it off the table: [clustering/replication for resilience is a $400/month proprietary add-on](https://influxdata.com/blog/update-on-influxdb-clustering-high-availability-and-monetization/). There is a [HackerNews discussion that might offer more insight](https://news.ycombinator.com/item?id=11262318).
-
-I don't know about you, dear reader, but data integrity and security are two aspects of software design which should by default, for free.
-
-#### Prometheus
-This is a other all-in-one, plug & play solution written in Go. This is a very strong contender due to the single ecosystem solution it presents.
+### Monitoring:
+* Sensu x2 
+* Redis x2
 
 ### Logging
-* ElasticSearch cluster: x3
-* Logstash: x3
+* ElasticSearch cluster (two nodes)
+* Logstash: x2
 
-Kibana will be used too, but it will be installed on each ElasticSearch instance.
+Kibana will be used too, but it will be installed on each ElasticSearch instance. I am also weighing my options between [ElasticHQ](http://www.elastichq.org) and [Kopf](https://github.com/lmenezes/elasticsearch-kopf).
 
-I am also weighing my options between [ElasticHQ](http://www.elastichq.org) and [Kopf](https://github.com/lmenezes/elasticsearch-kopf).
+### Production
+When we deliver to the public Internet, we will use a production class infrastructure. This is an environment which must be able to withstand the inbound traffic, stand up even after a system fails, and keep track of what's going on within the application and network.
+
+Here is a basic visual representation of production:
+
+![Production](./gitbook/images/production-v1.png)

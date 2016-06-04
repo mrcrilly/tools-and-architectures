@@ -17,9 +17,9 @@ In this book I want to address the specific architecture that would support virt
 - High availability;
 - Deployment;
 
-These are pretry critical subjects that all systems engineers should take seriously. I want to cover these subjects in as complete a fashion as I can, and I will do so in the above order, strictly. This means the following technologies will be studied and documented in the following order (which may change):
+These are pretty subjects that all systems engineers should take seriously. I want to cover these subjects in as complete a fashion as I can, and I will do so in the above order, strictly. This means the following technologies will be studied and documented in the following order (which may change):
 
-- Networking and Firewalls:
+- Networking and Firewalls (AWS):
     + Terraform;
 - Monitoring:
     + InfluxDB;
@@ -41,8 +41,9 @@ These are pretry critical subjects that all systems engineers should take seriou
 - Deployment:
     + Theory: Continous Integration;
     + Theory: Continous Delivery;
-    + DroneCI;
-    + JenkinsCI (maybe phased out);
+    + DroneCI and JenkinsCI;
+- Analytics:
+    + 
 
 I want to address all of above, and I will do so by providing:
 

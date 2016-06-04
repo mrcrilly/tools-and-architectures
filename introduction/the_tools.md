@@ -11,11 +11,6 @@ Please note that not everything has been documented yet. Anything that isn't a l
 * [Packer](infrastructure_management/packer/packer.md);
 * [Terraform](infrastructure_management/terraform/terraform.md);
 
-## Containers
-* Docker;
-* Docker Swarm;
-* Docker Compose;
-
 ## Continuous Integration/Deployment
 * DroneCI;
 * JenkinsCI;

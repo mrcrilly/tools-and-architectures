@@ -4,7 +4,6 @@
     - [Flow](introduction/flow.md)
     - [The Tools](introduction/the_tools.md)
 * [Architecture](introduction/architecture.md)
-* [Documenting a Tool](introduction/documenting_a_tool.md)
 * [Configuration Management](configuration_management/configuration_management.md)
     - [Ansible](configuration_management/ansible/ansible.md)
     - [Terraform Inventory](configuration_management/ansible/terraform_inventory.md)
