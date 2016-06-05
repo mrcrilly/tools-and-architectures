@@ -3,7 +3,7 @@ When we deliver to the public Internet, we will use a production class infrastru
 
 Here is a basic visual representation of production:
 
-![Production](http://i.imgur.com/yASDD5G.png)
+![Production](http://i.imgur.com/a2O9Fde.png)
 
 The diagram contains numbered sections. I will discuss these below.
 
