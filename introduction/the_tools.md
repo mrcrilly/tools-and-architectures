@@ -1,8 +1,6 @@
 # The Tools
 Here are my tools of choice, in no particular order, roughly catergorised.
 
-Please note that not everything has been documented yet. Anything that isn't a link is currently not available or unwritten.
-
 ## Configuration Management
 * [Ansible](configuration_management/ansible/ansible.md);
 * [ansible-inventory-terraform](configuration_management/ansible/terrform_inventory.md); Custom, dynamic inventory based on Terraform;
