@@ -19,3 +19,10 @@ A set of contribution guidelines have yet to be developed. For now, just throw p
 
 # Contact
 @mrmcrilly and `movedx` on Freenode IRC.
+
+# Licence
+This book is licenceed under the Creative Commons "Attribution-NonCommercial-Share Alike (CC BY-NC-SA)".
+
+Here is a [human readable version](http://creativecommons.org/licenses/by-nc-sa/4.0/) for your review.
+
+Here is the [actual licence for legal review](http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
