@@ -22,8 +22,8 @@ These are pretty subjects that all systems engineers should take seriously. I wa
 - Networking and Firewalls (AWS):
     + Terraform;
 - Monitoring:
-    + InfluxDB;
-    + Telegraf;
+    + Sensu;
+    + Redis;
     + Grafana;
 - Logging:
     + ElasticSearch;
@@ -43,7 +43,7 @@ These are pretty subjects that all systems engineers should take seriously. I wa
     + Theory: Continous Delivery;
     + DroneCI and JenkinsCI;
 - Analytics:
-    + 
+    + Piwik;
 
 I want to address all of above, and I will do so by providing:
 

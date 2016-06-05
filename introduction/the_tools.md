@@ -2,33 +2,41 @@
 Here are my tools of choice, in no particular order, roughly catergorised.
 
 ## Configuration Management
+CM tools enable use to remotely and easily configure systems in a consistent, code based way.
+
 * [Ansible](configuration_management/ansible/ansible.md);
-* [ansible-inventory-terraform](configuration_management/ansible/terrform_inventory.md); Custom, dynamic inventory based on Terraform;
+* [Terraform Inventory](configuration_management/ansible/terrform_inventory.md); Custom, dynamic inventory based on Terraform;
 
 ## Infrastructure Management
+Like CM, IM does the same thing, but for infrastructure, such as networks and VMs.
+
 * [Packer](infrastructure_management/packer/packer.md);
 * [Terraform](infrastructure_management/terraform/terraform.md);
 
 ## Continuous Integration/Deployment
+With CI and CD, we're able to automatically deliver value to our network automatically, based on certain events or triggers.
+
 * DroneCI;
 * JenkinsCI;
 
 ## Monitoring
-* Telegraf;
+Monitoring is a must for all environments.
+
+* Sensu;
+* Redis;
 * Grafana;
 
 ## Database
-* PostgreSQL;
-* MariaDB with Galera;
-* [InfluxDB](monitoring/influxdb/influxdb.md);
+We have to store our data somewhere, right?
 
-## Caching
-* Redis;
+* PostgreSQL;
+* Replication Manager;
 
 ## HTTPS and Load Balancing
+We must serve our application as well as balance incoming requests across mulitple stateless systems.
+
 * Nginx;
 * HAProxy;
-* Varnish Cache
 
 ## Logging
 * ElasticSearch;
@@ -36,10 +44,6 @@ Here are my tools of choice, in no particular order, roughly catergorised.
 * Kibana;
 
 ## Analytics
-Undecided at this point. I'm currently torn between:
+Being able to gather intelligence on who is visiting your website, and from where, using what platform, and so on, allows you to adjust your approach to market to suit your demographics.
 
 * Piwik;
-* OWA;
-* Google Analytics;
-
-A decision will be made soon (and it will very likely not be Google's solution.)

@@ -3,7 +3,7 @@ I've always wanted to document the tools and architecture I have so often used a
 
 The tools we use daily are really quite important to our jobs. The wrong tool, or the right tool misconfigured, can slow us down or result in data corruption or loss. We should select good tools, based on community input and reviews, and then use them correctly for the best results.
 
-I've seen a lot of people implement poor networks with little to no monitoring, logging, security barriers, deployment processes, and much more. I want to help people design and implement good architectures by providing as much advise and tooling as possible, all wrapped up in a real world example application.
+I've seen a lot of people implement poor networks with little to no monitoring, logging, security barriers, deployment processes, and much more. I want to help people design and implement good architectures by providing as much advise and tooling as possible, all wrapped with an example application.
 
 Together, by pooling our knowledge and skillsets into this book, I believe we can help prevent the above and give new comers a fighting chance.
 
