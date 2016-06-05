@@ -19,7 +19,7 @@ In this book I want to address the specific architecture that would support virt
 
 These are pretty subjects that all systems engineers should take seriously. I want to cover these subjects in as complete a fashion as I can, and I will do so in the above order, strictly. This means the following technologies will be studied and documented in the following order (which may change):
 
-- Networking and Firewalls (AWS):
+- Infrastructure (Networks, VMs, etc):
     + Terraform;
 - Monitoring:
     + Sensu;

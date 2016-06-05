@@ -16,7 +16,7 @@ Ideally we would have a real-world application to use for demonstation purposes,
 
 This application will have a few points at which it is updated and pushed to GitHub. This will enable us to demonstrate CI and CD after we've made changes.
 
-## Our Architecture
+## Our Architecture: in brief
 I have outlined the infrastructure below. Diagrams have also been provided, giving a visual representation.
 
 Here is a brief breakdown of each component used to deliver our application.
@@ -42,9 +42,3 @@ Here is a brief breakdown of each component used to deliver our application.
 
 Kibana will be used too, but it will be installed on each ElasticSearch instance. I am also weighing my options between [ElasticHQ](http://www.elastichq.org) and [Kopf](https://github.com/lmenezes/elasticsearch-kopf).
 
-### Production
-When we deliver to the public Internet, we will use a production class infrastructure. This is an environment which must be able to withstand the inbound traffic, stand up even after a system fails, and keep track of what's going on within the application and network.
-
-Here is a basic visual representation of production:
-
-![Production](./gitbook/images/production-v1.png)
