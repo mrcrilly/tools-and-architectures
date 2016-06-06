@@ -90,3 +90,14 @@ The layout for a module is also split out over a collection of files, like so:
 We use our `main.tf` file for the "guts" of the module, and then use `inputs.tf` and `outputs.tf` to keep the module's exposed variables separated.
 
 It's likely we will need to build on this structure in the long run, adding in support for other features as the module deals with more complex resources.
+
+## Windows Server
+When dealing with Windows Server 2008 or above, especially in AWS (where my experience of this stems), it's important a custom AMI be made that configures a few WinRM flags. Here are the commands needed to get WinRM working remotely, allowing Teraform to do its stuff.
+
+```
+winrm set winrm/config/service/Auth '@{Basic="true"}'
+winrm set winrm/config/service '@{AllowUnencrypted="true"}'
+winrm set winrm/config/winrs '@{MaxMemoryPerShellMB="1024"}'
+```
+
+These have been taken directly from [the README of this Go library](https://github.com/masterzen/winrm), which Terraform uses for WinRM connections.
